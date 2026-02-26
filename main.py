@@ -86,7 +86,7 @@ def menu(msg, kb, is_first : bool = False):
     bot.send_message(msg.chat.id, text,reply_markup=kb)
 
 def show_information(msg):
-    pass
+    bot.send_message(msg.chat, "Я даун")
 
 def to_accept_design_one(msg):
     kb = ReplyKeyboardRemove()
