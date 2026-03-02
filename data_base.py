@@ -35,4 +35,12 @@ accept_scheme = {
 }
 accept = users.create_table(accept_scheme, "accept")
 
+date_write_scheme = {
+    "chat_id": INT + KEY,
+    "day" : TEXT,
+    "time": TEXT,
+}
+
+writes = users.create_table(date_write_scheme, "writes")
+
 
